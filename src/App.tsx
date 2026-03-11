@@ -281,7 +281,7 @@ ${h.done?"bg-green-400":"bg-gray-200"}
 
 <PieChart width={350} height={250}>
 <Pie data={pieData} dataKey="value">
-{pieData.map((entry,index)=>(
+{pieData.map((_, index)=>(
 <Cell key={index} fill={COLORS[index%COLORS.length]}/>
 ))}
 </Pie>
